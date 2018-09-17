@@ -1,11 +1,30 @@
 # app-dev-testing-permissions-and-save
 App to test various combinations of permissions and saving. 
 
+## Permission Setup
+
+Create these groups and users to start:
+
+1. In the existing admin-group, create a user called
+    1. Papa Smurf
+1. Group **Smurfs** with Members
+    1. Brainy Smurf
+    1. Greede Smurf
+    1. Smurfette
+1. Group **Bad Guys** with members
+    1. Gargamel
+    1. Azrael
+1. In the group of registered users, just put in some non-smurfs:
+    1. Lone Ranger
+    1. Spiderman
+    1. Hulk
+
+
 These are the tests we need:
 
 ## Standard UI Save Tests - Basic Control Flow
 
-These tests should use a very simple content-type (basically a title) just to verify the flow and correct find/save. Run this as a non-host user with edit-permissions only! Do not run as host, as you'll probably not discover important issues. 
+These tests should use a very simple content-type (basically a title) just to verify the flow and correct find/save. Run this as a non-host user (Smurfette) with edit-permissions only! _Do not run as host, as you'll probably not discover important issues_. 
 
 1. Form in item-id mode (not content-group)
     1. Open form for new item, fill in, save
