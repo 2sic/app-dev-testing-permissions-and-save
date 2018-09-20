@@ -1,1 +1,23 @@
-<p>You successfully created your own template. Start editing it by hovering the "Manage" button and opening the "Edit Template" dialog.</p>
+<h1>1 - Standard UI Save Tests - Basic Control Flow</h1>
+<h2>@Content.EntityType</h2>
+<div>
+  These tests should use a very simple content-type (basically a title) just to verify the flow and correct find/save.<br>
+  Run this as a non-host user (Smurfette) with edit-permissions only!<br>
+  Do not run as host, as you'll probably not discover important issues.<br>
+</div>
+<ol>
+  <li>Form in item-id mode (not content-group)</li>
+  <ol>
+    <li>Open form for new item, fill in, save</li>
+    <li>open form for edit item, make change, save</li>
+  </ol>
+</ol>
+<script src="@App.Path/spec/t11.spec.js"></script>
+<script>
+  const t11 = {
+    moduleId: @Dnn.Module.ModuleID,
+    appFolder: '@App.Folder',
+    entityType: '@Content.EntityType',
+  }
+  t11spec(t11.moduleId, t11.appFolder, t11.entityType);
+</script>
