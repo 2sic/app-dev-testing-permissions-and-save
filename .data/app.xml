@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2018-09-21T10:17:31.9638653+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2018-09-21T11:22:01.4254323+02:00">
   <Header>
     <App Guid="48131ccd-40ff-411a-891b-5ce85df3b365" />
     <Language Default="en-US" />
@@ -113,7 +113,7 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.03" Type="String" />
+      <Value Key="Version" Value="00.00.05" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="0a11c71e-3915-45ea-84d2-affb834234e7" KeyNumber="38" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="847a89e1-1ac0-49b2-9489-f5ec16e9df01" KeyNumber="38" />
@@ -134,9 +134,6 @@
       <Value Key="Type" Value="C# Razor" Type="String" />
       <Value Key="UseForList" Value="False" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
-    </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="fc718da0-937a-4be4-b7e6-a4188a38b8e2" AttributeSetName="t1-simple-content-type" EntityGUID="4732b6c9-c53f-475a-9a83-36dc1cfd5d63">
-      <Value Key="Title" Value="New 't1-simple-content-type' from 2018-09-21T03:11:40.658Z" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="8dad0ef8-9682-47d0-9773-b669b6aa2ea3" AttributeSetName="t21-content-type-without-permissions" EntityGUID="328ee411-f7d5-4763-bafd-498b636e313f">
       <Value Key="Title" Value="t21-001" Type="String" />
