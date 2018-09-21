@@ -1,6 +1,7 @@
+using System;
+using System.Web.Http;
 using DotNetNuke.Entities.Users;
 using DotNetNuke.Security;
-using System.Web.Http;
 using DotNetNuke.Security.Membership;
 using ToSic.SexyContent.WebApi;
 
@@ -47,6 +48,34 @@ public class DnnUserController : SxcApiController
     catch
     {
       return false;
+    }
+  }
+
+  [HttpGet]
+  [AllowAnonymous]
+  public string Register(string username, string password)
+  {
+    try
+    {
+      // 1. Check Password is Valid
+      if (!UserController.ValidatePassword(password)) return null;
+
+      var user = new UserInfo
+      {
+          PortalID = Dnn.Portal.PortalId,
+          Username = username,
+          Email = username + "@lab4dev.ml",
+          DisplayName = username,
+          Membership = { Password = password, Approved = true }
+      };
+
+      var CreateStatus = UserController.CreateUser(ref user);
+
+      return user.Username;
+    }
+    catch(Exception e)
+    {
+        return e.Message;
     }
   }
 }

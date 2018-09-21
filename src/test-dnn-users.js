@@ -26,3 +26,21 @@ const users = {
 const passwords = {
   default: 'Split2018!',
 }
+
+function install() {
+  for (var user in users) {
+    if (!!users[user]){
+      register(users[user], passwords.default, logUser);
+    }
+  }
+}
+
+function logUser(message) {
+  return log("user: " + message);
+}
+
+function log(message) {
+  console.log('stv log', message);
+  var userRolesStatus = document.getElementById('userRolesStatus');
+  userRolesStatus.innerHTML += message + '<br>';
+}
