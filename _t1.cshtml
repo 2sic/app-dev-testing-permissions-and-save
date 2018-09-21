@@ -13,17 +13,22 @@
 <div>
     <div>
         <lablel>Title</lablel>:
-        <strong class="t11-title">@Content.EntityTitle</strong>
+        <strong class="t1-title">@Content.EntityTitle</strong>
     </div>
 </div>
-
-
-<script src="@App.Path/spec/t11.spec.js"></script>
-<script>
-  const t11 = {
-    moduleId: @Dnn.Module.ModuleID,
-    appFolder: '@App.Folder',
-    entityType: '@Content.EntityType',
-  }
-  t11spec(t11.moduleId, t11.appFolder, t11.entityType);
-</script>
+<p></p>
+<h2>1.2 - Form in list-mode (content-group)</h2>
+<ol>
+    <li>Open form for edit-first (new) item, fill in, save</li>
+    <li>Open form for add-directly (new) item, fill in, save</li>
+    <li>Add dummy item using toolbar, then edit it, save</li>
+    <li>edit existing item, save</li>    
+</ol>
+<ol>
+@foreach(var cont in AsDynamic(Data["Default"])){
+    <li>
+        <strong class="t1-list-title">@cont.EntityTitle</strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
+    </li>
+}
+</ol>
