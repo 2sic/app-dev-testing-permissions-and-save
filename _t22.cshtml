@@ -9,34 +9,26 @@
 </ul>
 <p></p>
 
+<h3>@Content.EntityType</h3>
+<ol>
+  <li><a href='javascript:newItemForm("@Dnn.Module.ModuleID")'>open form for new item, fill in, save</a></li>
+  <li>open form for edit item, make change, save</li>
+  <ol>
+  @foreach(var cont in AsDynamic(App.Data[entityType])){
+    <li style='background: @(cont.IsPublished ? "" : "yellow")'>
+        <strong><a class="data-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
+    </li>
+  }
+  </ol>
+</ol>
+<p></p>
+
 <script>
     // simple function to run the command and handle the returned promise
-    function addSimpleContent(tag) {
+    function newItemForm(tag) {
         $2sxc.cms.run(tag, "new", { contentType: "@Content.EntityType"})
             .then(function () {
                 // alert("Thanks - we'll review your entry and publish it.")
             });
     }
 </script>
-
-<button onclick='window.addSimpleContent(this); return false;'>Add your  "@Content.EntityType"</button>
-<p></p>
-
-<h3>Item @Content.EntityType</h3>
-@Edit.Toolbar(Content, actions: "new,edit", contentType: "@Content.EntityType")
-<div>
-    <div>
-        <label>Title</label>:
-        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
-    </div>
-</div>
-<p></p>
-<h3>List @Content.EntityType</h3>
-<ol>
-@foreach(var cont in AsDynamic(App.Data[entityType])){
-    <li>
-        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
-        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
-    </li>
-}
-</ol>
