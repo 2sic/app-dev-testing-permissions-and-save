@@ -4,16 +4,19 @@
   Run this as a non-host user (Smurfette) with edit-permissions only!<br>
   Do not run as host, as you'll probably not discover important issues.<br>
 </div>
+<p></p>
 <h2>1.1 - Form in item-id mode (not content-group)</h2>
 <ol>
   <li>open form for new item, fill in, save</li>
   <li>open form for edit item, make change, save</li>
 </ol>
+<p></p>
+<h3>Item @Content.EntityTitle</h3>
 @Edit.Toolbar(Content, actions: "new,edit", contentType: "@Content.EntityType")
 <div>
     <div>
         <lablel>Title</lablel>:
-        <strong class="t1-title">@Content.EntityTitle</strong>
+        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
     </div>
 </div>
 <p></p>
@@ -24,10 +27,12 @@
     <li>Add dummy item using toolbar, then edit it, save</li>
     <li>edit existing item, save</li>    
 </ol>
+<p></p>
+<h3>List @Content.EntityTitle</h3>
 <ol>
 @foreach(var cont in AsDynamic(Data["Default"])){
     <li>
-        <strong class="t1-list-title">@cont.EntityTitle</strong>
+        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
         @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
     </li>
 }
