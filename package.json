@@ -1,0 +1,24 @@
+{
+  "name": "app-dev-testing-permissions-and-save",
+  "version": "1.0.0",
+  "description": "2sxc app to test various combinations of permissions and saving",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "webdriver-manager start",
+    "test": "protractor conf.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/2sic/app-dev-testing-permissions-and-save.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/2sic/app-dev-testing-permissions-and-save/issues"
+  },
+  "homepage": "https://github.com/2sic/app-dev-testing-permissions-and-save#readme",
+  "dependencies": { }
+}

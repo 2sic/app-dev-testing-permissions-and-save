@@ -1,0 +1,27 @@
+<h1>2 - Public Form UI Tests</h1>
+<div>
+  These tests should verify that permissions prevent / allow saving correctly. So the setup must be:
+</div>
+<h2>2.1 - a content-type which doesn't have permissions set</h2>
+<ul>
+  <li>in this case an anonymous user who has the edit-button should get errors loading the schema already.</li>
+</ul>
+<p></p>
+<h3>Item @Content.EntityTitle</h3>
+@Edit.Toolbar(Content, actions: "new,edit", contentType: "@Content.EntityType")
+<div>
+    <div>
+        <label>Title</label>:
+        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
+    </div>
+</div>
+<p></p>
+<h3>List @Content.EntityTitle</h3>
+<ol>
+@foreach(var cont in AsDynamic(Data["Default"])){
+    <li>
+        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
+    </li>
+}
+</ol>

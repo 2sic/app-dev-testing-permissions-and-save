@@ -1,0 +1,23 @@
+<h2>2.2 - a content-type which has create-permissions, but no schema permissions</h2>
+<ul>
+  <li>again an anonyomus user should get errors</li>
+</ul>
+<p></p>
+<h3>Item @Content.EntityTitle</h3>
+@Edit.Toolbar(Content, actions: "new,edit", contentType: "@Content.EntityType")
+<div>
+    <div>
+        <label>Title</label>:
+        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
+    </div>
+</div>
+<p></p>
+<h3>List @Content.EntityTitle</h3>
+<ol>
+@foreach(var cont in AsDynamic(Data["Default"])){
+    <li>
+        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
+    </li>
+}
+</ol>
