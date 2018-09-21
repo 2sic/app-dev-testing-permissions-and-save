@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2018-09-20T17:15:52.9554613+02:00">
+  <Header>
+    <App Guid="48131ccd-40ff-411a-891b-5ce85df3b365" />
+    <Language Default="en-US" />
+    <Dimensions />
+  </Header>
+  <AttributeSets>
+    <AttributeSet StaticName="App-Resources" Name="App-Resources" Description="Stores resources like translations for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="App-Settings" Name="App-Settings" Description="Stores settings for an app" Scope="2SexyContent-App" AlwaysShareConfiguration="false">
+      <Attributes />
+    </AttributeSet>
+    <AttributeSet StaticName="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Name="t1-simple-content-type" Description="very simple content-type (basically a title)" Scope="2SexyContent" AlwaysShareConfiguration="false">
+      <Attributes>
+        <Attribute StaticName="Title" Type="String" IsTitle="true">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="aed49f57-b649-4e6b-bdfe-a9b627adcbb6" KeyNumber="995">
+            <Value Key="InputType" Value="string-default" Type="String" />
+            <Value Key="Name" Value="Title" Type="String" />
+            <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
+          </Entity>
+        </Attribute>
+      </Attributes>
+    </AttributeSet>
+  </AttributeSets>
+  <Entities>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="5e7b29bd-8c59-4192-a75a-394b5e2ee2ec" KeyNumber="38">
+      <Value Key="DisplayName" Value="app-dev-testing-permissions-and-save" Type="String" />
+      <Value Key="Folder" Value="app-dev-testing-permissions-and-save" Type="String" />
+      <Value Key="OriginalId" Value="" Type="String" />
+      <Value Key="Version" Value="00.00.01" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="0a11c71e-3915-45ea-84d2-affb834234e7" KeyNumber="38" />
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="847a89e1-1ac0-49b2-9489-f5ec16e9df01" KeyNumber="38" />
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="fc718da0-937a-4be4-b7e6-a4188a38b8e2" AttributeSetName="t1-simple-content-type" EntityGUID="542d41df-c2d0-4df5-bee5-3311db023af5">
+      <Value Key="Title" Value="t1-simple-item" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="60e43149-84c6-497d-9271-81577d81d9e7">
+      <Value Key="ContentDemoEntity" Value="542d41df-c2d0-4df5-bee5-3311db023af5" Type="Entity" />
+      <Value Key="ContentTypeStaticName" Value="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Type="String" />
+      <Value Key="IsHidden" Value="False" Type="Boolean" />
+      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="Location" Value="Portal File System" Type="String" />
+      <Value Key="Name" Value="t11" Type="String" />
+      <Value Key="Path" Value="_t11.cshtml" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="PublishData" Value="False" Type="Boolean" />
+      <Value Key="StreamsToPublish" Value="" Type="String" />
+      <Value Key="Type" Value="C# Razor" Type="String" />
+      <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="ViewNameInUrl" Value="" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="a9c4b954-01d6-492f-bb01-91044a87f57c">
+      <Value Key="ContentTypeStaticName" Value="" Type="String" />
+      <Value Key="IsHidden" Value="False" Type="Boolean" />
+      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
+      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="Location" Value="Portal File System" Type="String" />
+      <Value Key="Name" Value="before-all-test" Type="String" />
+      <Value Key="Path" Value="_before-all-tests.cshtml" Type="String" />
+      <Value Key="PresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="PublishData" Value="False" Type="Boolean" />
+      <Value Key="StreamsToPublish" Value="" Type="String" />
+      <Value Key="Type" Value="C# Razor" Type="String" />
+      <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="ViewNameInUrl" Value="" Type="String" />
+    </Entity>
+  </Entities>
+  <PortalFiles />
+  <PortalFolders>
+    <Folder Id="213" RelativePath="adam/app-dev-testing-permissions-and-save/" />
+  </PortalFolders>
+</SexyContent>
