@@ -1,39 +1,58 @@
+@* enable the editing *@
+@Edit.Enable(api: true, forms: true, context: true, autoToolbar: false)
+@{
+  string entityType = Content.EntityType;
+}
 <h1>1 - Standard UI Save Tests - Basic Control Flow</h1>
 <div>
   These tests should use a very simple content-type (basically a title) just to verify the flow and correct find/save.<br>
-  Run this as a non-host user (Smurfette) with edit-permissions only!<br>
-  Do not run as host, as you'll probably not discover important issues.<br>
+  Run this as a non-host user (Smurfette) with edit-permissions only! Do not run as host, as you'll probably not discover important issues.<br>
 </div>
 <p></p>
 <h2>1.1 - Form in item-id mode (not content-group)</h2>
 <ol>
-  <li>open form for new item, fill in, save</li>
+  <li><a href='javascript:newItemForm("@Dnn.Module.ModuleID")'>open form for new item, fill in, save</a></li>
   <li>open form for edit item, make change, save</li>
 </ol>
 <p></p>
-<h3>Item @Content.EntityTitle</h3>
-@Edit.Toolbar(Content, actions: "new,edit", contentType: "@Content.EntityType")
-<div>
-    <div>
-        <label>Title</label>:
-        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
-    </div>
-</div>
+
+<h3>@Content.EntityType (data, item-id)</h3>
+<ol>
+@foreach(var cont in AsDynamic(App.Data[entityType])){
+    <li style='background: @(cont.IsPublished ? "" : "yellow")'>
+        <strong><a class="data-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
+    </li>
+}
+</ol>
 <p></p>
+
 <h2>1.2 - Form in list-mode (content-group)</h2>
 <ol>
     <li>Open form for edit-first (new) item, fill in, save</li>
     <li>Open form for add-directly (new) item, fill in, save</li>
     <li>Add dummy item using toolbar, then edit it, save</li>
-    <li>edit existing item, save</li>    
+    <li>edit existing item, save</li>
 </ol>
 <p></p>
-<h3>List @Content.EntityTitle</h3>
+
+<h3>@Content.EntityType content-group</h3>
+@Edit.Toolbar(ListContent)
 <ol>
 @foreach(var cont in AsDynamic(Data["Default"])){
-    <li>
-        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
+    <li style='background: @(cont.IsPublished ? "" : "yellow")'>
+        <strong><a class="content-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
         @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
     </li>
 }
 </ol>
+<p></p>
+
+<script>
+    // simple function to run the command and handle the returned promise
+    function newItemForm(tag) {
+        $2sxc.cms.run(tag, "new", { contentType: "@Content.EntityType"})
+            .then(function () {
+                // alert("Thanks - we'll review your entry and publish it.")
+            });
+    }
+</script>
