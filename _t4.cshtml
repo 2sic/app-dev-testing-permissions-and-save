@@ -1,0 +1,35 @@
+<h1>4 - DNN Workflow</h1>
+<p>2sxc supports the DNN (evoq) workflow. To verify this, we must check the following: on an Evoq with page-workflow enabled, a user should be able to make changes, but they should always result in...</p>
+<ul>
+  <li>the page becoming versioned</li>
+  <li>the live version to not show any changes (verify browsing with an anonymous browser to the same page)</li>
+  <li>the version would have to be released/published for the changes to appear</li>
+  <li>after publishing, everything should work again, so more edits should be possible</li>
+</ul>
+<p>Prepare these tests:</p>
+<ol>
+  <li>be able to add modules - it should now be in a future version and not published</li>
+  <li>on a published page, a user should be able to edit an item, and this change should cause a new page version (be draft), and not published</li>
+  <li>on a published page with a list-2sxc-module, add an item. The standard effects should happen.</li>
+  <li>on a published page with a list 2sxc module, re-order some items. The standard effects should happen.</li>
+  <li>on a publishing page with a data-2sxc-module (items from query or <code>App.Data["..."]</code> edit an item. The standard effects should happen</li>
+</ol>
+<p></p>
+<h3>Item @Content.EntityTitle</h3>
+@Edit.Toolbar(Content, actions: "new,edit,delete", contentType: "@Content.EntityType")
+<div>
+    <div>
+        <label>Title</label>:
+        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
+    </div>
+</div>
+<p></p>
+<h3>List @Content.EntityTitle</h3>
+<ol>
+@foreach(var cont in AsDynamic(Data["Default"])){
+    <li>
+        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove,delete", contentType: "@Content.EntityType")
+    </li>
+}
+</ol>
