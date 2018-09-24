@@ -1,5 +1,5 @@
 @* enable the editing *@
-@Edit.Enable(api: true, forms: true, context: true, autoToolbar: false)
+@Edit.Enable(api: true, forms: true, context: true, autoToolbar: true)
 @{
   string entityType = Content.EntityType;
 }
@@ -35,8 +35,8 @@
   <ol>
   @foreach(var cont in AsDynamic(Data["Default"])){
     <li style='background: @(cont.IsPublished ? "" : "yellow")'>
-        <strong><a class="content-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
-        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: "@Content.EntityType")
+        <strong><a class="content-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID", @cont.EntityId)'>@cont.EntityTitle</a></strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove", contentType: @Content.EntityType)
     </li>
   }
   </ol>
