@@ -74,3 +74,16 @@
   <strong>@GetCurrentUserGuid(@Dnn.User.Username)</strong>
 </div>
 <p></p>
+
+<script>
+    function newItemForm(tag, entityType) {
+        $2sxc.cms.run(tag, "new", { contentType: entityType})
+            .then(function () {
+                // alert("Thanks - we'll review your entry and publish it.")
+            });
+    }
+    
+    function editItemForm(tag, entityId) {
+        $2sxc.cms.run(tag, "edit", { entityId: entityId, });
+    }
+</script>

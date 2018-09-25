@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.33.00" ExportDate="2018-09-21T11:22:01.4254323+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.32.01" ExportDate="2018-09-25T16:39:07.439205+02:00">
   <Header>
     <App Guid="48131ccd-40ff-411a-891b-5ce85df3b365" />
     <Language Default="en-US" />
@@ -15,7 +15,7 @@
     <AttributeSet StaticName="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Name="t1-simple-content-type" Description="very simple content-type (basically a title)" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="aed49f57-b649-4e6b-bdfe-a9b627adcbb6" KeyNumber="995">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="aed49f57-b649-4e6b-bdfe-a9b627adcbb6" KeyNumber="739">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -26,7 +26,7 @@
     <AttributeSet StaticName="8dad0ef8-9682-47d0-9773-b669b6aa2ea3" Name="t21-content-type-without-permissions" Description="content-type which doesn't have permissions set" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cc36435b-43a7-4dbd-a603-713da3299b5b" KeyNumber="996">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="cc36435b-43a7-4dbd-a603-713da3299b5b" KeyNumber="740">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -37,7 +37,7 @@
     <AttributeSet StaticName="909f6575-5ecf-4bb5-bf72-2e00430408d5" Name="t22-content-type-C" Description="content-type which has create-permissions, but no schema permissions" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="76680ff5-4ed8-4194-b467-46992881a10c" KeyNumber="997">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="76680ff5-4ed8-4194-b467-46992881a10c" KeyNumber="741">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -48,7 +48,7 @@
     <AttributeSet StaticName="1388c994-7666-46be-8299-8e066e38397c" Name="t23-content-type-Shema" Description="content-type which has schema-permissions" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9e1a6aad-0f91-448c-9578-06eab6651af3" KeyNumber="998">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="9e1a6aad-0f91-448c-9578-06eab6651af3" KeyNumber="742">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -59,7 +59,7 @@
     <AttributeSet StaticName="7d9aad2e-a59d-44c7-9672-c272c4e5f2ac" Name="t24-content-type-Shema-CreateDraft" Description="content-type which has anonyomus schema permissions, and anonymous create-draft" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="be5d2beb-d892-4081-8b71-deff60a1147a" KeyNumber="999">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="be5d2beb-d892-4081-8b71-deff60a1147a" KeyNumber="743">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -70,7 +70,7 @@
     <AttributeSet StaticName="b89f299b-2594-4df2-8083-4e2399a17a6f" Name="t25-content-type-Shema-EditDraft" Description="content-type which has anonyomus schema permissions, and anonymous edit-draft" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ad90ff16-9732-4de1-9681-8bef1f96ef8a" KeyNumber="1000">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="ad90ff16-9732-4de1-9681-8bef1f96ef8a" KeyNumber="744">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -81,7 +81,7 @@
     <AttributeSet StaticName="be3216c5-ac95-4ef6-896f-d35b98918e97" Name="t3-content-type-Shema-C-EditDraft-D" Description="read schema, create (full-create, not draft), edit-draft only, delete" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b1f48e88-bcd7-4dac-813d-81bf2765b771" KeyNumber="1001">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="b1f48e88-bcd7-4dac-813d-81bf2765b771" KeyNumber="745">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -92,7 +92,7 @@
     <AttributeSet StaticName="064219c0-78c3-4c61-b19f-6f02877a2396" Name="t4-content-type-dnn-workflow" Description="2sxc supports the DNN (evoq) workflow" Scope="2SexyContent" AlwaysShareConfiguration="false">
       <Attributes>
         <Attribute StaticName="Title" Type="String" IsTitle="true">
-          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a4ec56ba-695f-45b8-ac37-517218c4616c" KeyNumber="1002">
+          <Entity AssignmentObjectType="EAV Field Properties" AttributeSetStaticName="@All" AttributeSetName="@All" EntityGUID="a4ec56ba-695f-45b8-ac37-517218c4616c" KeyNumber="746">
             <Value Key="InputType" Value="string-default" Type="String" />
             <Value Key="Name" Value="Title" Type="String" />
             <Value Key="VisibleInEditUI" Value="True" Type="Boolean" />
@@ -102,7 +102,7 @@
     </AttributeSet>
   </AttributeSets>
   <Entities>
-    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="5e7b29bd-8c59-4192-a75a-394b5e2ee2ec" KeyNumber="38">
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="2SexyContent-App" AttributeSetName="2SexyContent-App" EntityGUID="5e7b29bd-8c59-4192-a75a-394b5e2ee2ec" KeyNumber="20">
       <Value Key="AllowRazorTemplates" Value="True" Type="Boolean" />
       <Value Key="AllowTokenTemplates" Value="True" Type="Boolean" />
       <Value Key="Description" Value="" Type="String" />
@@ -113,18 +113,19 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.05" Type="String" />
+      <Value Key="Version" Value="00.00.07" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="0a11c71e-3915-45ea-84d2-affb834234e7" KeyNumber="38" />
-    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="847a89e1-1ac0-49b2-9489-f5ec16e9df01" KeyNumber="38" />
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="0a11c71e-3915-45ea-84d2-affb834234e7" KeyNumber="20" />
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="847a89e1-1ac0-49b2-9489-f5ec16e9df01" KeyNumber="20" />
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="fc718da0-937a-4be4-b7e6-a4188a38b8e2" AttributeSetName="t1-simple-content-type" EntityGUID="542d41df-c2d0-4df5-bee5-3311db023af5">
-      <Value Key="Title" Value="t1-simple-item" Type="String" />
+      <Value Key="Title" Value="t1-001" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="a9c4b954-01d6-492f-bb01-91044a87f57c">
-      <Value Key="ContentTypeStaticName" Value="" Type="String" />
+      <Value Key="ContentDemoEntity" Value="542d41df-c2d0-4df5-bee5-3311db023af5" Type="Entity" />
+      <Value Key="ContentTypeStaticName" Value="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Type="String" />
       <Value Key="IsHidden" Value="False" Type="Boolean" />
-      <Value Key="ListContentTypeStaticName" Value="" Type="String" />
-      <Value Key="ListPresentationTypeStaticName" Value="" Type="String" />
+      <Value Key="ListContentTypeStaticName" Value="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Type="String" />
+      <Value Key="ListPresentationTypeStaticName" Value="fc718da0-937a-4be4-b7e6-a4188a38b8e2" Type="String" />
       <Value Key="Location" Value="Portal File System" Type="String" />
       <Value Key="Name" Value="before-all-test" Type="String" />
       <Value Key="Path" Value="_before-all-tests.cshtml" Type="String" />
@@ -132,7 +133,7 @@
       <Value Key="PublishData" Value="False" Type="Boolean" />
       <Value Key="StreamsToPublish" Value="" Type="String" />
       <Value Key="Type" Value="C# Razor" Type="String" />
-      <Value Key="UseForList" Value="False" Type="Boolean" />
+      <Value Key="UseForList" Value="True" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="8dad0ef8-9682-47d0-9773-b669b6aa2ea3" AttributeSetName="t21-content-type-without-permissions" EntityGUID="328ee411-f7d5-4763-bafd-498b636e313f">
@@ -268,9 +269,6 @@
       <Value Key="Identity" Value="" Type="String" />
       <Value Key="Title" Value="anonymous edit-draft" Type="String" />
     </Entity>
-    <Entity AssignmentObjectType="Default" AttributeSetStaticName="b89f299b-2594-4df2-8083-4e2399a17a6f" AttributeSetName="t25-content-type-Shema-EditDraft" EntityGUID="2a651d4d-986d-49e2-a7c1-c82ab24236f7">
-      <Value Key="Title" Value="t25-001" Type="String" />
-    </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="2SexyContent-Template" AttributeSetName="2SexyContent-Template" EntityGUID="e0df009c-3a85-461b-9af2-e3782bdf3076">
       <Value Key="ContentDemoEntity" Value="2a651d4d-986d-49e2-a7c1-c82ab24236f7" Type="Entity" />
       <Value Key="ContentTypeStaticName" Value="b89f299b-2594-4df2-8083-4e2399a17a6f" Type="String" />
@@ -291,25 +289,25 @@
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="dfcaa868-ce74-4db7-9080-a643c0b46c7f" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="$" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs read shema" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="545961c7-5f48-4585-9d75-14b94d2df07b" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="c" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs create (full-create, not draft)" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="e491833f-1bc7-4a55-9298-952eea7c1aa4" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="řčǔď" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs edit-draft only" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="1c17fa97-588d-477e-921a-333ce12b3e66" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="d" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs delete" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="be3216c5-ac95-4ef6-896f-d35b98918e97" AttributeSetName="t3-content-type-Shema-C-EditDraft-D" EntityGUID="ea98e464-c05b-42ba-b1fc-24b044e1c5c0">
@@ -352,9 +350,21 @@
       <Value Key="UseForList" Value="True" Type="Boolean" />
       <Value Key="ViewNameInUrl" Value="" Type="String" />
     </Entity>
+    <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="3105a4cd-09af-43d7-be6f-94ccf4667a6f" KeyGuid="fc718da0-937a-4be4-b7e6-a4188a38b8e2">
+      <Value Key="Condition" Value="" Type="String" />
+      <Value Key="Grant" Value="crud" Type="String" />
+      <Value Key="Identity" Value="3449e56c-f288-497b-beae-32d4e8631722" Type="String" />
+      <Value Key="Title" Value="Smurfette with edit-permissions" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="bd1e69fe-5269-4967-af10-16bd40771cc2" KeyNumber="20">
+      <Value Key="Condition" Value="" Type="String" />
+      <Value Key="Grant" Value="r" Type="String" />
+      <Value Key="Identity" Value="fb7ac4dd-4b03-4cde-8674-d0b070ed35c7" Type="String" />
+      <Value Key="Title" Value="user AppSmurf read permissions for the APP" Type="String" />
+    </Entity>
   </Entities>
   <PortalFiles />
   <PortalFolders>
-    <Folder Id="213" RelativePath="adam/app-dev-testing-permissions-and-save/" />
+    <Folder Id="102" RelativePath="adam/app-dev-testing-permissions-and-save/" />
   </PortalFolders>
 </SexyContent>

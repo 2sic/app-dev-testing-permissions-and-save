@@ -1,3 +1,8 @@
+@* enable the editing *@
+@Edit.Enable(api: true, forms: true, context: true, autoToolbar: true)
+@{
+  string entityType = Content.EntityType;
+}
 <h1>3 - Semi-Public forms</h1>
 <div>
   These are forms which are not allowed for public users, but for registered users or users in a certain group. <br>
@@ -22,21 +27,17 @@
     <li>a user in that group should be able to delete</li>
 </ol>
 <p></p>
-<h3>Item @Content.EntityTitle</h3>
-@Edit.Toolbar(Content, actions: "new,edit,delete", contentType: "@Content.EntityType")
-<div>
-    <div>
-        <label>Title</label>:
-        <strong class="item-@Content.EntityTitle">@Content.EntityTitle</strong>
-    </div>
-</div>
-<p></p>
-<h3>List @Content.EntityTitle</h3>
+
+<h3>@Content.EntityType</h3>
 <ol>
-@foreach(var cont in AsDynamic(Data["Default"])){
-    <li>
-        <strong class="list-@Content.EntityTitle">@cont.EntityTitle</strong>
-        @Edit.Toolbar(cont, actions: "edit,new,add,remove,delete", contentType: "@Content.EntityType")
+  <li><a href='javascript:newItemForm("@Dnn.Module.ModuleID", "@Content.EntityType")'>open form for new item, fill in, save</a></li>
+  <li>open form for edit item, make change, save</li>
+  <ol>
+  @foreach(var cont in AsDynamic(App.Data[entityType])){
+    <li style='background: @(cont.IsPublished ? "" : "yellow")'>
+        <strong><a class="data-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
     </li>
-}
+  }
+  </ol>
 </ol>
+<p></p>
