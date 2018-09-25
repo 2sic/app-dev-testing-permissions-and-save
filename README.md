@@ -1,5 +1,7 @@
 # app-dev-testing-permissions-and-save
-App to test various combinations of permissions and saving. 
+App to test various combinations of permissions and saving.
+
+[How to setup environment for testing permissions with this app?](./assets/Docs/setup.md)
 
 ## Permission Setup
 
