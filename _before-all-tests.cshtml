@@ -86,4 +86,12 @@
     function editItemForm(tag, entityId) {
         $2sxc.cms.run(tag, "edit", { entityId: entityId, });
     }
+
+    function deleteItem(tag, entityId, entityGuid, entityTitle) {
+        $2sxc.cms.run(tag, "delete", { 
+          entityId: entityId,
+          entityGuid: entityGuid,
+          entityTitle: entityTitle
+        });
+    }
 </script>

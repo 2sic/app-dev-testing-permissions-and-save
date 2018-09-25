@@ -29,13 +29,16 @@
 <p></p>
 
 <h3>@Content.EntityType</h3>
+@Edit.Toolbar(ListContent)
 <ol>
   <li><a href='javascript:newItemForm("@Dnn.Module.ModuleID", "@Content.EntityType")'>open form for new item, fill in, save</a></li>
   <li>open form for edit item, make change, save</li>
   <ol>
   @foreach(var cont in AsDynamic(App.Data[entityType])){
     <li style='background: @(cont.IsPublished ? "" : "yellow")'>
-        <strong><a class="data-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID",@cont.EntityId)'>@cont.EntityTitle</a></strong>
+        <strong><a class="data-@cont.EntityTitle" href='javascript:editItemForm("@Dnn.Module.ModuleID", @cont.EntityId)'>@cont.EntityTitle</a></strong>
+        <strong><a href='javascript:deleteItem("@Dnn.Module.ModuleID", @cont.EntityId, "@cont.EntityGuid", "@cont.EntityTitle")'>[DELETE]</a></strong>
+        @Edit.Toolbar(cont, actions: "edit,new,add,remove,delete", contentType: @Content.EntityType)
     </li>
   }
   </ol>
