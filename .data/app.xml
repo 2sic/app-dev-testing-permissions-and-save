@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.32.01" ExportDate="2018-09-21T15:38:28.3242219+02:00">
+<SexyContent FileVersion="07.00.00" MinimumRequiredVersion="07.00.00" ModuleVersion="09.32.01" ExportDate="2018-09-25T16:39:07.439205+02:00">
   <Header>
     <App Guid="48131ccd-40ff-411a-891b-5ce85df3b365" />
     <Language Default="en-US" />
@@ -113,7 +113,7 @@
       <Value Key="RequiredDnnVersion" Value="07.02.00" Type="String" />
       <Value Key="RequiredVersion" Value="08.03.00" Type="String" />
       <Value Key="SupportsAjaxReload" Value="False" Type="Boolean" />
-      <Value Key="Version" Value="00.00.06" Type="String" />
+      <Value Key="Version" Value="00.00.07" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Settings" AttributeSetName="App-Settings" EntityGUID="0a11c71e-3915-45ea-84d2-affb834234e7" KeyNumber="20" />
     <Entity AssignmentObjectType="App" AttributeSetStaticName="App-Resources" AttributeSetName="App-Resources" EntityGUID="847a89e1-1ac0-49b2-9489-f5ec16e9df01" KeyNumber="20" />
@@ -289,25 +289,25 @@
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="dfcaa868-ce74-4db7-9080-a643c0b46c7f" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="$" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs read shema" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="545961c7-5f48-4585-9d75-14b94d2df07b" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="c" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs create (full-create, not draft)" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="e491833f-1bc7-4a55-9298-952eea7c1aa4" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="řčǔď" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs edit-draft only" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Entity" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="1c17fa97-588d-477e-921a-333ce12b3e66" KeyGuid="be3216c5-ac95-4ef6-896f-d35b98918e97">
       <Value Key="Condition" Value="" Type="String" />
       <Value Key="Grant" Value="d" Type="String" />
-      <Value Key="Identity" Value="20" Type="String" />
+      <Value Key="Identity" Value="5" Type="String" />
       <Value Key="Title" Value="Smurfs delete" Type="String" />
     </Entity>
     <Entity AssignmentObjectType="Default" AttributeSetStaticName="be3216c5-ac95-4ef6-896f-d35b98918e97" AttributeSetName="t3-content-type-Shema-C-EditDraft-D" EntityGUID="ea98e464-c05b-42ba-b1fc-24b044e1c5c0">
@@ -355,6 +355,12 @@
       <Value Key="Grant" Value="crud" Type="String" />
       <Value Key="Identity" Value="3449e56c-f288-497b-beae-32d4e8631722" Type="String" />
       <Value Key="Title" Value="Smurfette with edit-permissions" Type="String" />
+    </Entity>
+    <Entity AssignmentObjectType="App" AttributeSetStaticName="PermissionConfiguration" AttributeSetName="PermissionConfiguration" EntityGUID="bd1e69fe-5269-4967-af10-16bd40771cc2" KeyNumber="20">
+      <Value Key="Condition" Value="" Type="String" />
+      <Value Key="Grant" Value="r" Type="String" />
+      <Value Key="Identity" Value="fb7ac4dd-4b03-4cde-8674-d0b070ed35c7" Type="String" />
+      <Value Key="Title" Value="user AppSmurf read permissions for the APP" Type="String" />
     </Entity>
   </Entities>
   <PortalFiles />
